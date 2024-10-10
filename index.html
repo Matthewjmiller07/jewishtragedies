@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jewish History Timeline</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/dist/nouislider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/dist/nouislider.min.css">
+</head>
+<body>
+    <div id="map" style="height: 500px;"></div>
+    <div id="slider" style="width: 80%; margin: 20px auto;"></div>
+    <div>
+        <label for="filter">Filter by event type:</label>
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="Expulsion">Expulsion</option>
+            <option value="Massacre">Massacre</option>
+            <option value="Forced Conversion">Forced Conversion</option>
+            <option value="Synagogue Burning">Synagogue Burning</option>
+            <option value="Book Burning">Book Burning</option>
+            <option value="Jews Burned Alive">Jews Burned Alive</option>
+            <option value="Pogrom">Pogrom</option>
+        </select>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
