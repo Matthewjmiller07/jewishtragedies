@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jewish History Timeline</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/dist/nouislider.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/dist/nouislider.min.css">
+    <style>
+        #map { height: 500px; margin-bottom: 20px; }
+        #controls { width: 80%; margin: 0 auto; }
+        #slider { margin-bottom: 20px; }
+        #filter { margin-bottom: 20px; }
+    </style>
 </head>
 <body>
-    <div id="map" style="height: 500px;"></div>
-    <div id="slider" style="width: 80%; margin: 20px auto;"></div>
-    <div>
+    <div id="map"></div>
+    <div id="controls">
+        <div id="slider"></div>
         <label for="filter">Filter by event type:</label>
         <select id="filter">
             <option value="all">All</option>
             <option value="Expulsion">Expulsion</option>
-            <option value="Massacre">Massacre</option>
             <option value="Forced Conversion">Forced Conversion</option>
-            <option value="Synagogue Burning">Synagogue Burning</option>
-            <option value="Book Burning">Book Burning</option>
+            <option value="Massacre">Massacre</option>
             <option value="Jews Burned Alive">Jews Burned Alive</option>
             <option value="Pogrom">Pogrom</option>
+            <option value="Synagogue Burning">Synagogue Burning</option>
+            <option value="Book Burning">Book Burning</option>
+            <option value="Stake Burnings">Stake Burnings</option>
+            <option value="Property Confiscation">Property Confiscation</option>
+            <option value="Mob Attacks">Mob Attacks</option>
+            <option value="Inquisition">Inquisition</option>
+            <option value="Executions">Executions</option>
+            <option value="Discrimination">Discrimination</option>
         </select>
     </div>
-    <script src="app.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/dist/nouislider.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
